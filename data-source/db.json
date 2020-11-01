@@ -1,0 +1,152 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "categoryId": 1,
+            "productName": "Döner",
+            "unitPrice": 20,
+            "unitsInStock": 207
+        },
+        {
+            "id": 2,
+            "categoryId": 1,
+            "productName": "Köfte",
+            "unitPrice": 25,
+            "unitsInStock": 105
+        },
+        {
+            "id": 3,
+            "categoryId": 1,
+            "productName": "Et",
+            "unitPrice": 30,
+            "unitsInStock": 53
+        },
+        {
+            "id": 4,
+            "categoryId": 2,
+            "productName": "Çay",
+            "unitPrice": 4,
+            "unitsInStock": 300
+        },
+        {
+            "id": 5,
+            "categoryId": 2,
+            "productName": "Kola",
+            "unitPrice": 8,
+            "unitsInStock": 150
+        },
+        {
+            "id": 6,
+            "categoryId": 2,
+            "productName": "Fanta",
+            "unitPrice": 8,
+            "unitsInStock": 120
+        },
+        {
+            "id": 7,
+            "categoryId": 2,
+            "productName": "Sprite",
+            "unitPrice": 8,
+            "unitsInStock": 140
+        },
+        {
+            "id": 8,
+            "categoryId": 2,
+            "productName": "Meyve Suyu",
+            "unitPrice": 8,
+            "unitsInStock": 170
+        },
+        {
+            "id": 9,
+            "categoryId": 2,
+            "productName": "Gazoz",
+            "unitPrice": 6,
+            "unitsInStock": 160
+        },
+        {
+            "id": 10,
+            "categoryId": 2,
+            "productName": "Su",
+            "unitPrice": 2,
+            "unitsInStock": 200
+        },
+        {
+            "id": 11,
+            "categoryId": 3,
+            "productName": "T-shirt",
+            "unitPrice": 65,
+            "unitsInStock": 80
+        },
+        {
+            "id": 12,
+            "categoryId": 3,
+            "productName": "Sweet Ceket",
+            "unitPrice": 150,
+            "unitsInStock": 105
+        },
+        {
+            "id": 13,
+            "categoryId": 3,
+            "productName": "Jean",
+            "unitPrice": "120",
+            "unitsInStock": 75
+        },
+        {
+            "id": 14,
+            "categoryId": 4,
+            "productName": "İphone SE 2",
+            "unitPrice": "5200",
+            "unitsInStock": 50
+        },
+        {
+            "id": 15,
+            "categoryId": 4,
+            "productName": "Samsung Galaxy 17",
+            "unitPrice": 15000,
+            "unitsInStock": 20
+        },
+        {
+            "id": 16,
+            "categoryId": 4,
+            "productName": "Huawei P40",
+            "unitPrice": "2300",
+            "unitsInStock": 200
+        },
+        {
+            "id": 17,
+            "categoryId": 4,
+            "productName": "General Mobile GM 5 Plus",
+            "unitPrice": "1700",
+            "unitsInStock": 175
+        },
+        {
+            "id": 18,
+            "categoryId": 4,
+            "productName": "İphone 8",
+            "unitPrice": "5000",
+            "unitsInStock": 100
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "categoryName": "Yiyecek",
+            "seoUrl": "yiyecek"
+        },
+        {
+            "id": 2,
+            "categoryName": "İçecek",
+            "seoUrl": "icecek"
+        },
+        {
+            "id": 3,
+            "categoryName": "Giyim",
+            "seoUrl": "giyim"
+        },
+        {
+            "id": 4,
+            "categoryName": "Elektronik",
+            "seoUrl": "elektronik"
+        }
+    ]
+}
