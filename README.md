@@ -3,6 +3,7 @@
 Open Terminal
 
 ```
+> cd {projectDirectory}
 > npm install
 > cd ./data-source
 > json-server -w .\db.json
