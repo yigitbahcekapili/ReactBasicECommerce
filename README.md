@@ -1,9 +1,10 @@
 # Getting Started
 
-> npm install
-> cd ./data-source
-> json-server -w .\db.json
+Open Terminal
+-> npm install
+-> cd ./data-source
+-> json-server -w .\db.json
 
 New Terminal
-> npm start
-> y
+-> npm start
+-> y
