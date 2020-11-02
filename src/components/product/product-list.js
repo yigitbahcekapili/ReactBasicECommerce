@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { Badge, Table } from "reactstrap";
 import { API_BASE_URL, API_CONTROLLER } from "../../constants/api-constants";
 import { HttpRequestHelper } from "../../helper/http-request";
+import { connect } from "react-redux";
 
-export default class ProductList extends Component {
+class ProductList extends Component {
 	constructor(props) {
 		super();
 
@@ -49,7 +50,7 @@ export default class ProductList extends Component {
 			<div>
 				<h3>
 					{this.props.info.title} -{" "}
-					<Badge color="warning">{this.props.currentCategory}</Badge>
+					<Badge color="warning">{this.props.currentCategoryName}</Badge>
 				</h3>
 				<Table>
 					<thead>
@@ -66,3 +67,12 @@ export default class ProductList extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => {
+	return {
+		currentCategoryId: state.currentCategoryId,
+		currentCategoryName: state.currentCategoryName,
+	};
+};
+
+export default connect(mapStateToProps)(ProductList);

@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import { ListGroup, ListGroupItem, Spinner } from "reactstrap";
-import { API_BASE_URL, API_CONTROLLER } from "../../constants/api-constants";
+import { connect } from "react-redux";
 import { HttpRequestHelper } from "../../helper/http-request";
+import { API_BASE_URL, API_CONTROLLER } from "../../constants/api-constants";
+import { changeCategory } from "../../redux/actions";
 
-export default class CategoryList extends Component {
+class CategoryList extends Component {
 	constructor(props) {
-		super(props);
+		super();
 
 		this.state = {
-			categories: [],
+			categoryList: [],
 		};
 
 		this.categoryApiUrl = API_BASE_URL + API_CONTROLLER.categories;
@@ -22,9 +24,7 @@ export default class CategoryList extends Component {
 
 	getCategoryList() {
 		HttpRequestHelper.get(this.categoryApiUrl).then((data) => {
-			this.setState({
-				categories: data,
-			});
+			this.setState({ categoryList: data });
 		});
 	}
 
@@ -33,12 +33,12 @@ export default class CategoryList extends Component {
 			<div>
 				<h3>{this.props.info.title}</h3>
 				<ListGroup>
-					{this.state.categories.length === 0 ? (
+					{this.state.categoryList.length === 0 ? (
 						<ListGroupItem>
 							<Spinner animation="border" variant="success" />
 						</ListGroupItem>
 					) : (
-						this.state.categories.map((category) => (
+						this.state.categoryList.map((category) => (
 							<ListGroupItem
 								active={category.id === this.props.currentCategoryId}
 								onClick={() => this.props.changeCategory(category)}
@@ -53,3 +53,7 @@ export default class CategoryList extends Component {
 		);
 	}
 }
+
+const mapStateToProps = (state) => ({});
+
+export default connect(mapStateToProps, { changeCategory })(CategoryList);
