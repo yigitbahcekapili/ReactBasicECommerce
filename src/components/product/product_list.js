@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Badge, Table } from "reactstrap";
-import { API_BASE_URL, API_CONTROLLER } from "../../constants/api-constants";
-import { HttpRequestHelper } from "../../helper/http-request";
+import { API_BASE_URL, API_CONTROLLER } from "../../constants/api_constants";
+import { HttpRequestHelper } from "../../helper/http_request";
 import { connect } from "react-redux";
 
 class ProductList extends Component {
@@ -10,6 +10,7 @@ class ProductList extends Component {
 
 		this.state = {
 			products: [],
+			inputText: "",
 		};
 
 		this.productApiUrl = API_BASE_URL + API_CONTROLLER.products;

@@ -1,17 +1,17 @@
 import React, { Component } from "react";
 import { Col, Container, Row } from "reactstrap";
-import CategoryList from "./components/category/category-list";
+import CategoryList from "./components/category/category_list";
 import Header from "./components/header/header";
-import ProductList from "./components/product/product-list";
+import ProductList from "./components/product/product_list";
 
 export default class App extends Component {
 	render() {
 		let categoryInfo = {
-			title: "Category List",
+			title: "Kategori Listesi",
 		};
 
 		let productInfo = {
-			title: "Product List",
+			title: "Ürün Listesi",
 		};
 
 		return (

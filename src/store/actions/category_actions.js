@@ -1,5 +1,4 @@
-// import { HttpRequestHelper } from "../../helper/http-request";
-// import { API_BASE_URL, API_CONTROLLER } from "../../constants/api-constants";
+import { CategoryAction } from "../constants/category_constant";
 
 // export const getCategoryList = () => (dispatch) => {
 // 	let url = API_BASE_URL + API_CONTROLLER.categories;
@@ -14,7 +13,9 @@
 
 export const changeCategory = (category) => {
 	return {
-		type: "CHANGE_CATEGORY",
+		type: CategoryAction.ChangeCategory,
 		payload: category,
 	};
 };
+
+

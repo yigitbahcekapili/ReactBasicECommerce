@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { ListGroup, ListGroupItem, Spinner } from "reactstrap";
 import { connect } from "react-redux";
-import { HttpRequestHelper } from "../../helper/http-request";
-import { API_BASE_URL, API_CONTROLLER } from "../../constants/api-constants";
-import { changeCategory } from "../../redux/actions";
+import { HttpRequestHelper } from "../../helper/http_request";
+import { API_BASE_URL, API_CONTROLLER } from "../../constants/api_constants";
+import { changeCategory } from "../../store/actions/category_actions";
 
 class CategoryList extends Component {
 	constructor(props) {
