@@ -3,15 +3,14 @@
 Open Terminal
 
 ```
-> cd {projectDirectory}
-> npm install
-> cd ./data-source
-> json-server -w .\db.json
+> npm install -g json-server
+> json-server -w {projectDirectory}\data-source\db.json
 ```
 
 New Terminal
 
 ```
+> cd {projectDirectory}
+> npm install
 > npm start
-> y
 ```
